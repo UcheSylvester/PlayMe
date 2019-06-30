@@ -1,7 +1,7 @@
 # PlayMe
 ---------
 
-This a fun little project where built using the *Drag and Drop API, Video and Audio elements*
+This a fun little project built using the *Drag and Drop API, Video and Audio elements*
 
 Here the user should be able to 
 
