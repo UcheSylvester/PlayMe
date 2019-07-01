@@ -25,3 +25,8 @@ console.log('working');
 // dropTarget.addEventListener('dragover', dragOver)
 // dropTarget.addEventListener('dragleave', cancel)
 // dropTarget.addEventListener('drop', dropped)
+
+const playlist = document.getElementById('playlist');
+const playground = document.getElementById('playground');
+
+console.log(playlist, playground)
