@@ -33,6 +33,13 @@ function cancel(e) {
     if(e.preventDefault) e.preventDefault();
     if(e.stopPropagation) e.stopPropagation()
     console.log('cancelling default behavior...')
+    return false;
+}
+
+function dragOver(e) {
+    cancel(e);
+    e.dataTransfer.dropEffect = 'copy';
+    console.log('copying files from file system')
 }
 
 playground.addEventListener('dragenter', cancel);
