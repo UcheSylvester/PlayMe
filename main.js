@@ -29,4 +29,13 @@ console.log('working');
 const playlist = document.getElementById('playlist');
 const playground = document.getElementById('playground');
 
-console.log(playlist, playground)
+function cancel(e) {
+    if(e.preventDefault) e.preventDefault();
+    if(e.stopPropagation) e.stopPropagation()
+    console.log('cancelling default behavior...')
+}
+
+playground.addEventListener('dragenter', cancel);
+playground.addEventListener('dragover', dragOver);
+playground.addEventListener('dragleave', cancel);
+playground.addEventListener('drop', dropped)
