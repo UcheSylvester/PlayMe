@@ -1,14 +1,17 @@
 /* Resetting default browser styling */
 html,
 body,
-header {
+header,
+footer {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
-    background-color: rgb(234, 234, 247)
+    background-color: rgb(234, 234, 247);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
 }
 
 
@@ -27,16 +30,33 @@ header {
 }
 
 h1 {
-
-    
+    font-size: 3em;
+    color: navy;
+    text-align: center;
 }
 
-#dropTarget {
-    width: 50vw;
-    height: 50vh;
-    border: 2px solid navy;
-    margin: 0 auto;
-    border-radius: 10px;
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+#play-list {
+    height: 80vh;
+    background-color: rgb(184, 184, 241);
+}
+
+#playground {
+    height: 80vh;
+    /* background-color: red; */
+}
+
+footer {
+    font-size: 1.2em;
+    height: 2em;
+    background-color: rgb(143, 143, 236);
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 /* body {
