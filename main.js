@@ -17,6 +17,10 @@ function dragOver(e) {
     e.dataTransfer.dropEffect = 'copy';
 }
 
+function dropped(e) {
+    cancel(e)
+}
+
 dropTarget.addEventListener('dragenter', cancel)
 dropTarget.addEventListener('dragover', dragOver)
 dropTarget.addEventListener('dragleave', cancel)
