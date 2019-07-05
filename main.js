@@ -1,7 +1,6 @@
 console.log('working');
 
-
-const playlist = document.getElementById('playlist');
+// const playlist = document.getElementById('playlist');
 const playground = document.getElementById('playground');
 
 // canceling default behavior
